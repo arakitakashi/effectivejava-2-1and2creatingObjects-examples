@@ -16,8 +16,8 @@ public class HamburgerByBuilder {
         private final String bunType;
 
         // optional
-        private String cheese = "American";
-        private String saouce = "Mayonaise";
+        private String cheese = "None";
+        private String saouce = "None";
 
         public Builder(String meetType, String bunType) {
             this.meetType = meetType;

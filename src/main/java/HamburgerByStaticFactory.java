@@ -11,15 +11,15 @@ public class HamburgerByStaticFactory {
         this.saouce = saouce;
     }
 
-    public static HamburgerByStaticFactory changeCheese(String meetType, String bunType, String cheese) {
-        return new HamburgerByStaticFactory(meetType, bunType, cheese, "Mayonaise");
+    public static HamburgerByStaticFactory withCheese(String meetType, String bunType, String cheese) {
+        return new HamburgerByStaticFactory(meetType, bunType, cheese, "None");
     }
 
-    public static HamburgerByStaticFactory changeSaouce(String meetType, String bunType, String saouce) {
-        return new HamburgerByStaticFactory(meetType, bunType, "American", saouce);
+    public static HamburgerByStaticFactory withSaouce(String meetType, String bunType, String saouce) {
+        return new HamburgerByStaticFactory(meetType, bunType, "None", saouce);
     }
 
-    public static HamburgerByStaticFactory changeCheeseAndSaouce(String meetType, String bunType, String cheese, String saouce) {
+    public static HamburgerByStaticFactory withCheeseAndSaouce(String meetType, String bunType, String cheese, String saouce) {
         return new HamburgerByStaticFactory(meetType, bunType, cheese, saouce);
     }
 
